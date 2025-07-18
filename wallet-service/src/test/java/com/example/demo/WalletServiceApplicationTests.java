@@ -1,14 +1,14 @@
-package com.example.demo;
+package com.bolingcavalry.wallet;
 
-import com.bolingcavalry.mavendockerplugindemo.MavendockerplugindemoApplication;
+import com.bolingcavalry.wallet.WalletApplication;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 @SpringBootTest
-@ContextConfiguration(classes = {MavendockerplugindemoApplication.class})
-class MavendockerplugindemoApplicationTests {
+@ContextConfiguration(classes = {WalletApplication.class})
+class WalletServiceApplicationTests {
 
 	@Test
 	public void testAdd() {

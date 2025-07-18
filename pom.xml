@@ -3,7 +3,7 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.bolingcavalry</groupId>
-	<artifactId>mavendockerplugindemo</artifactId>
+	<artifactId>wallet-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
@@ -23,9 +23,9 @@
 		<spotbugs.annotations.version>4.7.3</spotbugs.annotations.version>
 		<spring.version>6.1.14</spring.version>
 		<spring-boot.version>3.3.7</spring-boot.version>
-		<spring-cloud.version>4.1.2</spring-cloud.version>
-        <spring-cloud-starter.version>4.1.2</spring-cloud-starter.version>
-		<spring-cloud-contract.version>4.1.2</spring-cloud-contract.version>
+		<spring-cloud.version>2025.0.0</spring-cloud.version>
+        <spring-cloud-starter.version>2025.0.0</spring-cloud-starter.version>
+		<spring-cloud-contract.version>2025.0.0</spring-cloud-contract.version>
 		<testcontainers.version>1.20.0</testcontainers.version>
 		<org.mapstruct.version>1.6.2</org.mapstruct.version>
 		<postgresql.version>42.7.4</postgresql.version>
@@ -36,14 +36,16 @@
 		<lombok.version>1.18.36</lombok.version>
 		<aws-sdks3-version>1.12.100</aws-sdks3-version>
 		<maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
-		<maven-flatter-plugin.version>1.0-alpha-1</maven-flatter-plugin.version>
+		<maven-flatter-plugin.version>1.7.1</maven-flatter-plugin.version>
 		<spring-boot.maven.plugin.version>3.3.7</spring-boot.maven.plugin.version>
 		<site.plugin.version>3.11.0</site.plugin.version>
-		<spotbugs.plugin.version>4.7.3</spotbugs.plugin.version>
+		<spotbugs.plugin.version>4.7.3.0</spotbugs.plugin.version>
 		<surefire.plugin.version>3.5.2</surefire.plugin.version>
 		<flyway.maven.plugin.version>11.1.0</flyway.maven.plugin.version>
 		<sonar-maven-plugin.version>4.2.0.3299</sonar-maven-plugin.version>
 		<sonar-jacoco-plugin.version>1.0.1</sonar-jacoco-plugin.version>
+		<jacoco-maven-plugin.version>5.1.0.4751</jacoco-maven-plugin.version>
+		<sonar-jacoco-maven.plugin.version>0.8.12</sonar-jacoco-maven.plugin.version>
 		<sonar.coverage.exclusions>**/com/bolingcavalry/**</sonar.coverage.exclusions>
 	    
 	</properties>
@@ -188,7 +190,7 @@
 			<plugin>
 				<groupId>org.sonarsource.scanner.maven</groupId>
 				<artifactId>sonar-maven-plugin</artifactId>
-				<version>${sonar-maven-plugin.version}</version>
+				<version>${jacoco-maven-plugin.version}</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -227,6 +229,5 @@
 
     <modules>
         <module>db-migration</module>
-		<module>db-migration-sql</module>
 	</modules>
 </project>

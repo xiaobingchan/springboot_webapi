@@ -9,17 +9,17 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bolingcavalry</groupId>
-	<artifactId>mavendockerplugindemo-db-migration</artifactId>
+	<artifactId>wallet-service-db-migration</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>mavendockerplugindemo-db-migration</name>
-	<description>maven docker plugin demo db migration</description>
+	<name>wallet-service-db-migration</name>
+	<description>wallet service db migration</description>
 
 	<properties>
 		<java.version>21</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring-cloud.version>4.1.2</spring-cloud.version>
+		<spring-cloud.version>2025.0.0</spring-cloud.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -44,7 +44,7 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins   </groupId>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.11.0</version>
                 <configuration>
