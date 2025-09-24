@@ -20,6 +20,7 @@ Ray Go 微服务：https://github.com/raychongtk/wallet
 figma 生成代码插件：
 https://www.figma.com/community/plugin/1248187540929489451/f2c-figma-to-code-react-rn-vue-html-yy-d2c
 https://www.figma.com/community/plugin/1443774571835235184（https://platform.openai.com/settings/organization/projects）
+百度Baidu Comate ：https://comate.baidu.com/zh/page/br1pdpetnyi
 
 
 ```
